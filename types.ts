@@ -1,13 +1,11 @@
-
 export interface Education {
   institution: string;
   degree: string;
   field: string;
   startYear: number;
   endYear: string;
-  gpa?: string; //
+  gpa?: string;
 }
-
 
 export interface Experience {
   role: string;
@@ -33,3 +31,13 @@ export interface Certification {
   date: string;
   credentialUrl?: string;
 }
+
+export interface Achievement {
+  title: string;
+  description: string;
+  year: number;
+  credentialUrl?: string;
+}
+
+
+export type Skill = string; // or use an interface if needed

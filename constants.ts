@@ -1,5 +1,5 @@
 
-import { Education, Project, Certification } from './types';
+import type { Education, Project, Certification, Achievement } from './types';
 
 export const SECTIONS = [
   { id: 'about', title: 'About' },
@@ -7,11 +7,13 @@ export const SECTIONS = [
   { id: 'experience', title: 'Experience' },
   { id: 'projects', title: 'Projects' },
   { id: 'certifications', title: 'Certifications' },
+  { id: 'skills', title: 'Skills' },
+  { id: 'achievements', title: 'Achievements' }, 
   { id: 'contact', title: 'Contact' },
 ];
 
 export const PERSONAL_INFO = {
-  name: 'Muhammad Arfy Rafa Fakhrezie',
+  name: 'Muhammad Arfy Rafa',
   title: 'Network Engineer | AI Enthusiast | Informatics Student',
   about: [
     "I am a 5th-semester Informatics Engineering student at Institut Teknologi Sains Bandung with 2 years of experience in IT, including working on manufacturing industry projects.",
@@ -52,7 +54,8 @@ export const EXPERIENCE_DATA = [
       'Set up and configured network systems to support project operations',
       'Provided daily technical support to project employees'
     ],
-    skills: ['Network Support', 'Troubleshooting', 'Technical Support']
+    
+    skills: ['Excel', 'Data Entry', 'Logistics Coordination'],
   },
   {
     role: 'IT Staff',
@@ -64,7 +67,7 @@ export const EXPERIENCE_DATA = [
       'Inputted data using Microsoft Excel and the company’s internal system',
       'Coordinated with the logistics and production teams to ensure smooth distribution'
     ],
-    skills: ['Excel', 'Data Entry', 'Logistics Coordination'],
+    skills: ['Troubleshooting', 'Network Infrastructure', 'Hardware & Software Setup',],
   },
   {
     role: 'IT Helpdesk (Internship)',
@@ -115,7 +118,7 @@ export const PROJECTS_DATA: Project[] = [
     description:
       'Developed a web-based library system using HTML, CSS, PHP, and MySQL. Implemented full CRUD operations for managing books, users, and transactions.',
     technologies: ['PHP', 'MySQL', 'HTML', 'CSS'],
-    repoUrl: 'https://github.com/yourusername/library-crud', // Ganti dengan link GitHub kamu
+    repoUrl: 'https://github.com/yourusername/library-crud',
     liveUrl: '',
     imageUrl: 'https://i.imgur.com/ThR5vec.png',
   },
@@ -140,12 +143,6 @@ export const CERTIFICATIONS_DATA: Certification[] = [
     issuer: 'IBM',
     date: 'Issued June 2025',
     credentialUrl: 'https://drive.google.com/file/d/1FqOdGm1RdPLkC41Pr4gmyd2BNjk2RSbY/view?usp=drive_link',
-  },
-  {
-    name: 'Code Generation and Optimization Using IBM Granite',
-    issuer: 'IBM',
-    date: 'Issued June 2025',
-    credentialUrl: 'https://drive.google.com/file/d/1_zGVNXMQeGTaxd98DPuYrSuTIxlbFi5l/view?usp=drive_link',
   },
   {
     name: 'Python Essentials 1',
@@ -191,9 +188,45 @@ export const CERTIFICATIONS_DATA: Certification[] = [
   },
 ];
 
+export const ACHIEVEMENTS: Achievement[] = [
+  {
+    title: 'Gold Medal – National Science Olympiad',
+    description: 'Bahasa Indonesia (National – 2025)',
+    year: 2025,
+    credentialUrl: 'https://drive.google.com/file/d/1mjOyu4dcXkaybHT2rf1IDVyj__NzHD9t/view?usp=drive_link',
+  },
+  {
+    title: 'Silver Medal – National Science Olympiad',
+    description: 'Bahasa Indonesia (National – 2020)',
+    year: 2020,
+    credentialUrl: 'https://drive.google.com/file/d/1pQu8geTA2B5_aNoz6sCCfqHwR59VhWzn/view?usp=drive_link',
+  },
+  {
+    title: 'Silver Medal – National Science Olympiad',
+    description: 'Bahasa Inggris (National – 2020)',
+    year: 2020,
+    credentialUrl: 'https://drive.google.com/file/d/1rUiklERqdw9PhtRPMSe0GeftWG-28wrz/view?usp=drive_link',
+  },
+  {
+    title: 'Participation – 15th IEOM Paper Competition',
+    description: 'Singapore (March 2025)',
+    year: 2025,
+    credentialUrl: 'https://drive.google.com/file/d/1NA4sh7VDBxmkavLV79MCaBtmthtLLtTi/view?usp=drive_link',
+  },
+];
+
+
+
+export const SKILLS = [
+  'HTML', 'CSS', 'TypeScript', 'React','Tailwind CSS', 'Python',
+  'Jupyter', 'Netwoking (Cisco & Mikrotik)', 'Linux', 'MySQL',
+  'Arduino', 'Git', 'Figma',
+];
+
+
 export const CONTACT_INFO = {
   email: 'arfyrafa123@gmail.com',
-  whatsapp: '6285721610319', // Tanpa +, untuk wa.me
+  whatsapp: '6285721610319',
   linkedin: 'https://www.linkedin.com/in/muhammad-arfy-rafa-f/',
 };
 

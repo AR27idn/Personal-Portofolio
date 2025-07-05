@@ -1,11 +1,14 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { Navbar } from './components/Navbar';
+import { MobileNavbar } from './components/MobileNavbar';
 import { AboutSection } from './components/AboutSection';
 import { EducationSection } from './components/EducationSection';
 import { ExperienceSection } from './components/ExperienceSection';
 import { ProjectsSection } from './components/ProjectsSection';
 import { CertificationsSection } from './components/CertificationsSection';
+import { AchievementsSection } from './components/AchievementsSection';
+import { SkillsSection } from './components/SkillsSection';
 import { ContactSection } from './components/ContactSection';
 import { SECTIONS } from './constants';
 
@@ -47,6 +50,7 @@ const App: React.FC = () => {
 
   return (
     <div className="flex min-h-screen flex-col lg:flex-row">
+      <MobileNavbar sections={SECTIONS} />
       <Navbar sections={SECTIONS} activeSection={activeSection} />
       <main className="flex-1 lg:pl-[450px] pt-16 lg:pt-0">
         <div className="p-8 sm:p-12 md:p-20 lg:py-24 space-y-24">
@@ -55,6 +59,8 @@ const App: React.FC = () => {
           <ExperienceSection setRef={setRef('experience')} />
           <ProjectsSection setRef={setRef('projects')} />
           <CertificationsSection setRef={setRef('certifications')} />
+          <SkillsSection setRef={setRef('Skill')} />  
+          <AchievementsSection setRef={setRef('Achievements')} />
           <ContactSection setRef={setRef('contact')} />
         </div>
       </main>
