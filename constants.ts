@@ -1,5 +1,5 @@
 
-import { Education, Experience, Project, Certification } from './types';
+import { Education, Project, Certification } from './types';
 
 export const SECTIONS = [
   { id: 'about', title: 'About' },
@@ -41,34 +41,43 @@ export const EDUCATION_DATA: Education[] = [
 ];
 
 
-export const EXPERIENCE_DATA: Experience[] = [
+export const EXPERIENCE_DATA = [
   {
-    role: 'Lead Frontend Engineer',
-    organization: 'Innovatech Solutions',
-    startDate: 'Jan 2018',
-    endDate: 'Present',
+    role: 'Warehouse Staff Admin',
+    organization: 'PT. Giken Dinamika Indonesia',
+    startDate: 'Aug 2021',
+    endDate: 'Sep 2022',
     description: [
-      'Led the development of a large-scale enterprise dashboard, improving data visualization and user interaction for over 10,000 daily active users.',
-      'Architected and implemented a component library in React and TypeScript, resulting in a 40% reduction in development time for new features.',
-      'Mentored a team of 5 junior and mid-level engineers, fostering a culture of code quality, testing, and continuous learning.',
-      'Integrated Gemini API for a prototype chatbot, enhancing user support and engagement.'
+      'Maintained and troubleshooted computer networks and hardware at project sites',
+      'Set up and configured network systems to support project operations',
+      'Provided daily technical support to project employees'
     ],
-    skills: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'GraphQL', 'Jest', 'CI/CD'],
+    skills: ['Network Support', 'Troubleshooting', 'Technical Support']
   },
   {
-    role: 'Senior Software Engineer',
-    organization: 'Digital Creations Inc.',
-    startDate: 'Jun 2014',
-    endDate: 'Dec 2017',
+    role: 'IT Staff',
+    organization: 'PT. Giken Dinamika Indonesia',
+    startDate: 'Sep 2021',
+    endDate: 'Oct 2022',
     description: [
-      'Developed and maintained customer-facing e-commerce platforms, handling millions of transactions per month.',
-      'Collaborated with UX/UI designers to translate wireframes and mockups into responsive, pixel-perfect web pages.',
-      'Optimized application performance, achieving a 30% improvement in page load times through code splitting and lazy loading.',
+      'Managed inventory documentation and logistics flow',
+      'Inputted data using Microsoft Excel and the company’s internal system',
+      'Coordinated with the logistics and production teams to ensure smooth distribution'
     ],
-    skills: ['React', 'Redux', 'JavaScript (ES6+)', 'Sass', 'Webpack', 'Agile Methodologies'],
+    skills: ['Excel', 'Data Entry', 'Logistics Coordination'],
+  },
+  {
+    role: 'IT Helpdesk (Internship)',
+    organization: 'PT. Perkebunan Nusantara VIII',
+    startDate: '2019',
+    endDate: '(3 Months)',
+    description: [
+      'Maintained computers and local networks in the office environment',
+      'Assisted with data backups and software installation for daily operations'
+    ],
+    skills: ['IT Support', 'Backup', 'Software Installation'],
   },
 ];
-
 export const PROJECTS_DATA: Project[] = [
   {
     title: 'Campus Network Upgrade & WiFi Login Portal',
