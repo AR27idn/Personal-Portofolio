@@ -118,7 +118,7 @@ export const PROJECTS_DATA: Project[] = [
     description:
       'Developed a web-based library system using HTML, CSS, PHP, and MySQL. Implemented full CRUD operations for managing books, users, and transactions.',
     technologies: ['PHP', 'MySQL', 'HTML', 'CSS'],
-    repoUrl: 'https://github.com/yourusername/library-crud',
+    repoUrl: 'https://github.com/AR27idn/Perpustakaan-ITSB',
     liveUrl: '',
     imageUrl: 'https://i.imgur.com/ThR5vec.png',
   },
